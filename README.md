@@ -2,10 +2,17 @@
 
 /src
   /controllers
-    tarefasController.js
-  /routes
-    tarefasRoutes.js
-  app.js
+  	tarefasController.js
+  /database
+  	db.js
+  /models
+  	tarefas.js
+  /routers
+    rotasTarefas.js
+  /Server
+  	server.js
+  index.js
+  
 package.json
 
 ______________________________________________________________________________
@@ -20,11 +27,16 @@ cd TodoListNode
 
 Instale as dependências:
 
-npm install
+-  npm install
+  
+-  npm install express pg
+  
+-  npm install --save-dev nodemon
+
 
 Inicie o servidor:
 
-npm start
+-  npm start
 
 Acesse a API em:
 
