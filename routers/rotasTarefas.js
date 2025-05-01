@@ -1,5 +1,5 @@
 import express from 'express';
-import { obterTarefas, criarTarefa, atualizarTarefa, excluirTarefa } from '../controller/tarefasController.js';
+import {obterTarefas, criarTarefa, atualizarTarefa, excluirTarefa } from '../controller/tarefasController.js';
 
 const router = express.Router();
 
