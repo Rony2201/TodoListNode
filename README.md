@@ -75,23 +75,23 @@ Método	Rota	Descrição
 
 GET	/tarefas
     
-    Listar todas as tarefas
+    [Listar todas as tarefas](http://localhost:3000/tarefas)
 
 GET /tarefas/:id 
     
-    Buscar tarefa pelo ID
+    [Buscar tarefa pelo ID](http://localhost:3000/tarefas/id)
 
 POST	/tarefas
 
-    Criar uma nova tarefa
+    [Criar uma nova tarefa](http://localhost:3000/tarefas)
 
 PUT	/tarefas/:id 
     
-    Atualizar tarefa pelo ID
+    [Atualizar tarefa pelo ID](http://localhost:3000/tarefas/id)
 
 DELETE	/tarefas/:id
 
-    Excluir tarefa pelo ID
+    [Excluir tarefa pelo ID](http://localhost:3000/tarefas/id)
 
 ______________________________________________________________________________
 
