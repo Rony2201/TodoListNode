@@ -73,25 +73,25 @@ ______________________________________________________________________________
 📖 Endpoints disponíveis
 Método	Rota	Descrição
 
-GET	/tarefas
+GET	[Listar todas as tarefas]
     
-    [Listar todas as tarefas](http://localhost:3000/tarefas)
+    http://localhost:3000/tarefas
 
-GET /tarefas/:id 
+GET [Buscar tarefa pelo ID] 
     
-    [Buscar tarefa pelo ID](http://localhost:3000/tarefas/id)
+    http://localhost:3000/tarefas/id
 
-POST	/tarefas
+POST	[Criar uma nova tarefa]
 
-    [Criar uma nova tarefa](http://localhost:3000/tarefas)
+    http://localhost:3000/tarefas
 
-PUT	/tarefas/:id 
+PUT	[Atualizar tarefa pelo ID]
     
-    [Atualizar tarefa pelo ID](http://localhost:3000/tarefas/id)
+    http://localhost:3000/tarefas/id
+    
+DELETE	[Excluir tarefa pelo ID]
 
-DELETE	/tarefas/:id
-
-    [Excluir tarefa pelo ID](http://localhost:3000/tarefas/id)
+    http://localhost:3000/tarefas/id
 
 ______________________________________________________________________________
 
