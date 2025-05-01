@@ -1,16 +1,22 @@
 📁 Estrutura do projeto
 
 /src
+
   /controllers
   	tarefasController.js
+   
   /database
   	db.js
+   
   /models
   	tarefas.js
+   
   /routers
     rotasTarefas.js
+    
   /Server
   	server.js
+   
   index.js
   
 package.json
