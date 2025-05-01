@@ -37,17 +37,32 @@ Acesse a pasta do projeto:
 cd TodoListNode
 
 Instale as dependências:
+ /instalar npm
+ 
+    npm install
+    
+ /instalar express e pg
+ 
+    npm install express pg
+    
+ /instalar nodemon
+ 
+    npm install --save-dev nodemon
 
--  npm install
-  
--  npm install express pg
-  
--  npm install --save-dev nodemon
+ /modificar packege.json
 
+    "type": "module",
+    "scripts": {
+      "dev": "nodemon Server/server.js",
+      "start": "node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
 
 Inicie o servidor:
 
--  npm start
+/iniciar servidor
+    
+    npm run dev
 
 Acesse a API em:
 
@@ -58,15 +73,25 @@ ______________________________________________________________________________
 📖 Endpoints disponíveis
 Método	Rota	Descrição
 
-GET	/tarefas	Listar todas as tarefas
+GET	/tarefas
+    
+    Listar todas as tarefas
 
-GET	/tarefas/:id	Buscar tarefa pelo ID
+GET /tarefas/:id 
+    
+    Buscar tarefa pelo ID
 
-POST	/tarefas	Criar uma nova tarefa
+POST	/tarefas
 
-PUT	/tarefas/:id	Atualizar tarefa pelo ID
+    Criar uma nova tarefa
 
-DELETE	/tarefas/:id	Excluir tarefa pelo ID
+PUT	/tarefas/:id 
+    
+    Atualizar tarefa pelo ID
+
+DELETE	/tarefas/:id
+
+    Excluir tarefa pelo ID
 
 ______________________________________________________________________________
 
