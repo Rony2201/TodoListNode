@@ -118,7 +118,9 @@ ______________________________________________________________________________
  POST -----> /tarefas    |--> Cria uma nova tarefa
 
  GET ------> /tarefas/:id      |--> Busca tarefa pelo ID
+ 
  PUT ------> /tarefas/:id      |--> Atualiza tarefa pelo ID
+ 
  DELETE ----> /tarefas/:id     |--> Exclui tarefa pelo ID
 
 
