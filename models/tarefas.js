@@ -1,4 +1,4 @@
-import pool from '../db.js';
+import pool from '../database/db.js';
 
 
 export const obterTarefas = async () => {
@@ -23,3 +23,11 @@ export const atualizarTarefa = async (id, concluida) => {
   );
   return result.rows[0];
 };
+
+export const excluirTarefa = async (id) => {
+  const result = await pool.query(
+    'DELETE FROM tarefas WHERE id = $1',
+    [id]
+  );
+  return result.rows[0];
+}
