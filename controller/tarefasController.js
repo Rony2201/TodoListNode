@@ -24,7 +24,8 @@ export const criarTarefa = async (req, res) => {
 
 export const atualizarTarefa = async (req, res) => {
     try {
-        const { id , concluida } = req.body;
+        const { id } = req.params;
+        const { concluida } = req.body;
 
         const tarefas = await tarefa.atualizarTarefa(id , concluida);
         res.status(201).json(tarefas);
