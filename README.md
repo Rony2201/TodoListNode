@@ -124,6 +124,7 @@ ______________________________________________________________________________
  DELETE ----> /tarefas/:id     |--> Exclui tarefa pelo ID
 
 
+![ChatGPT Image 1 de mai  de 2025, 12_16_23](https://github.com/user-attachments/assets/5e17a911-0e86-4300-ade3-3f568bc39e89)
 
 
 
