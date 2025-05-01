@@ -21,3 +21,27 @@ export const criarTarefa = async (req, res) => {
         res.status(500).json({ mensagem: 'Erro aos criar tarefas' });
     }
 };
+
+export const atualizarTarefa = async (req, res) => {
+    try {
+        const { id , concluida } = req.body;
+
+        const tarefas = await tarefa.atualizarTarefa(id , concluida);
+        res.status(201).json(tarefas);
+    } catch (error) {
+        console.error('Erro ao atualizar tarefa: ', error);
+        res.status(500).json({ mensagem: 'Erro ao atualizar tarefa '});
+    }
+}
+
+export const excluirTarefa = async (req, res) => {
+    try {
+        const id = req.params.id;
+
+        const tarefas = await tarefa.excluirTarefa(id);
+        res.status(201).json(tarefas);
+    }catch(error) {
+        console.error('Erro ao excluir tarefa: ', error);
+        res.status(500).json({mensagem: 'Erro ao excluir tarefa'});
+    }
+}
